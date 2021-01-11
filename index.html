@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Кривая Безье на 3х и более точках</title>
+    <style>
+        label{
+            font-weight: 700;
+        }
+        input{
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Кривая Безье на 3х и более точках</h2>
+    <div id="container" style="margin-top: 40px">
+        <h4>x[0-800] y[0-600]</h4>
+        <button id="add" style="margin-bottom: 10px">Добавить точку</button>
+        <button id="draw" style="margin-bottom: 10px">Отрисовать</button>
+        <button id="clear" style="margin-bottom: 10px">Очистить</button>
+        <ol class="ui" style="padding: 0 0 0 15px; margin: 0">
+            <li style="display: none" class="ui-item ui-item_new">
+                <label><input value="0" type="number">x</label>
+                <label><input value="0" type="number">y</label>
+            </li>
+            <li class="ui-item">
+                <label><input value="150" type="number">x</label>
+                <label><input value="300" type="number">y</label>
+            </li>
+            <li class="ui-item">
+                <label><input value="300" type="number">x</label>
+                <label><input value="50" type="number">y</label>
+            </li>
+            <li class="ui-item">
+                <label><input value="600" type="number">x</label>
+                <label><input value="400" type="number">y</label>
+            </li>
+        </ol>
+    </div>
+    <canvas id="canvas" width="800px" height="600px"></canvas>
+    <script src="main.js"></script>
+</body>
+</html>
